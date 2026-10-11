@@ -1,0 +1,25 @@
+#
+# Python
+#
+**/__pycache__/
+**/.mypy_cache/
+.venv/
+
+#
+# Security
+#
+cer/
+etc/prod/
+etc/stock_alert.env
+
+#
+# No logs
+#
+log/
+
+#
+# Project (build) artifacts
+#
+etc/nginx/certs/localhost+1-key.pem
+etc/nginx/certs/localhost+1.pem
+
