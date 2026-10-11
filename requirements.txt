@@ -1,0 +1,8 @@
+ruamel.yaml
+yfinance
+pymongo
+StrEnum
+Flask
+pyapns-client
+pydantic
+whl/ops_stats-5.5.0-py3-none-any.whl

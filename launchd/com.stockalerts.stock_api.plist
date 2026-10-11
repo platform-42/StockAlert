@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.stockalerts.stock_api</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/diederickdebuck/Developer/Python/StockAlert/ops/prod/stock_api.sh</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/diederickdebuck/Developer/Python/StockAlert</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/diederickdebuck/Developer/Python/StockAlert/log/prod/stock_api_stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/diederickdebuck/Developer/Python/StockAlert/log/prod/stock_api_stderr.log</string>
+</dict>
+</plist>

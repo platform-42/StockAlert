@@ -1,0 +1,6 @@
+apns:
+  team_id: <apple_team_id>
+  auth_key_id: <apple_auth_key_id>
+  topic: com.platform-42.StockPushAlert
+  auth_key_filepath: /Users/diederickdebuck/Developer/Python/StockAlert/cer/prod/APNS.p8
+  sandbox: false

@@ -1,0 +1,8 @@
+[tool.pylint.main]
+# List of Pylint message IDs to disable globally
+disable = [
+    "C0114",  # missing-module-docstring
+    "C0115",  # missing-class-docstring
+    "C0116",  # missing-function-docstring
+    "W0611",  # unused-import
+]

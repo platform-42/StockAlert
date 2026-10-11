@@ -1,0 +1,10 @@
+mongodb:
+  uri: mongodb://localhost:27017
+  database: StockAlert
+  collection_quotes: quotes
+  collection_alerts: alerts
+  collection_devices: devices
+  user: StockAlert
+  port: 27017
+  host: localhost
+  

@@ -1,0 +1,127 @@
+stocks:
+  - ticker: NNDM
+    description: Nano Dimension
+    breakoutQuote: 2.00
+    collapseQuote: 1.25
+    # Changed breakout after earnings 2026-01-15
+    sector: 3D
+
+  - ticker: AAPL
+    description: Apple computers
+    breakoutQuote: 260.00
+    collapseQuote: 200.00
+    sector: AI 
+
+  - ticker: SHOP
+    description: Shopify
+    breakoutQuote: 140.00
+    collapseQuote: 120.00
+    sector: AI
+  
+  - ticker: SSYS
+    description: Stratasys
+    breakoutQuote: 12.00
+    collapseQuote: 10.00
+    sector: 3D
+
+  - ticker: DDD
+    description: 3D systems
+    breakoutQuote: 3.00
+    collapseQuote: 2.00
+    sector: 3D
+
+  - ticker: MTLS
+    description: Materialize
+    breakoutQuote: 6.50
+    collapseQuote: 4.60
+    sector: 3D
+
+  - ticker: PLTR
+    description: Palantir
+    breakoutQuote: 180.00
+    collapseQuote: 140.00
+    sector: AI
+
+  - ticker: AMD
+    description: AMD
+    breakoutQuote: 250.00
+    collapseQuote: 220.00
+    sector: AI
+
+  - ticker: AI
+    description: C3.ai
+    breakoutQuote: 12.50
+    collapseQuote: 10.00
+    sector: AI
+
+  - ticker: SMCI
+    description: Super Micro Computer
+    breakoutQuote: 38.50
+    collapseQuote: 30.00
+    sector: AI
+
+  - ticker: IONQ
+    description: IONQ Inc - quantum computing
+    breakoutQuote: 35.50
+    collapseQuote: 25.00
+    sector: Quantum
+
+  - ticker: QUBT
+    description: Quantum Computing Inc - quantum conputing
+    breakoutQuote: 15.00
+    collapseQuote: 8.00
+    sector: Quantum
+
+  - ticker: XMTR
+    description: Xiometry 3D
+    breakoutQuote: 65.00
+    collapseQuote: 40.00
+    sector: 3D
+
+  - ticker: QBTS
+    description: D-wave quantum computing
+    breakoutQuote: 25.00
+    collapseQuote: 10.00
+    sector: Quantum
+
+  - ticker: HON
+    description: Honeywell computing
+    breakoutQuote: 250
+    collapseQuote: 220
+    sector: Quantum
+
+  - ticker: RGTI
+    description: Rigetti computing
+    breakoutQuote: 18.00
+    collapseQuote: 14.00
+    sector: Quantum
+
+  - ticker: IQM
+    description: Franklin Intelligent machines
+    breakoutQuote: 95.00
+    collapseQuote: 80.00
+    sector: Quantum
+
+  - ticker: ARQQ
+    description: Arqit Quantum inc.
+    breakoutQuote: 20.00
+    collapseQuote: 12.00
+    sector: Quantum
+
+  - ticker: IBM
+    description: IBM computers
+    breakoutQuote: 275.00
+    collapseQuote: 200.00
+    sector: Quantum
+
+  - ticker: XNDU
+    description: Xanadu Quantum inc.
+    breakoutQuote: 7.75
+    collapseQuote: 5.0
+    sector: Quantum
+
+  - ticker: QNT
+    description: Quantinuum inc.
+    breakoutQuote: 50.00
+    collapseQuote: 35.00
+    sector: Quantum

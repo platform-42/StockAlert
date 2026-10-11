@@ -1,0 +1,4 @@
+stock_api:
+  host: 127.0.0.1
+  port: 8100
+  api_key: <api_key>
