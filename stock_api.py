@@ -24,6 +24,7 @@ from pydantic import (
     BaseModel,
     ValidationError
     )
+from ops_stats import OpsClient
 from lib.core.utils import (
     load_yaml
 )
@@ -55,7 +56,6 @@ from lib.mongo.persistence import (
     db_update,
     db_delete
     )
-from ops_stats import OpsClient
 
 client = OpsClient(flush_interval_s=30)
 
