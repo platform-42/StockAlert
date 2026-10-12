@@ -1,4 +1,4 @@
-from strenum import StrEnum
+from enum import StrEnum
 
 class HttpEndpoints(StrEnum):
     ALERTS_BY_SECTOR = "/2026-01/alerts/sector"
