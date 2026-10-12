@@ -178,7 +178,7 @@ def create_app(
                 1,
                 1,
                 (stop_elapsed - start_elapsed) * 1000
-            )            
+            )
             return jsonify({
                 JsonTKN.STATUS.key: "error",
                 JsonTKN.MESSAGE.key: "Missing 'sector' query parameter"
