@@ -1,7 +1,7 @@
 ruamel.yaml
 yfinance
 pymongo
-StrEnum
+# StrEnum
 Flask
 pyapns-client
 pydantic
