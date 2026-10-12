@@ -17,6 +17,7 @@ import time
 
 from datetime import datetime
 
+from ops_stats import OpsClient
 from lib.core.tokens import (
     JsonTKN,
     StocksCFG,
@@ -48,7 +49,6 @@ from lib.mongo.payloads import (
     alert_insert_payload,
     alert_select_predicate
 )
-from ops_stats import OpsClient
 
 client = OpsClient(flush_interval_s=30) 
 
