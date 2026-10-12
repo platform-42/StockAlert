@@ -1,4 +1,4 @@
-from strenum import StrEnum
+from enum import StrEnum
 
 class AppCFG(StrEnum):
     APNS = "apns"
