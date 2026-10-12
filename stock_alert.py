@@ -50,7 +50,7 @@ from lib.mongo.payloads import (
     alert_select_predicate
 )
 
-client = OpsClient(flush_interval_s=30) 
+client = OpsClient(flush_interval_s=30)
 
 def handle_uncaught_exception(exc_type, exc_value, exc_traceback):
     if issubclass(exc_type, KeyboardInterrupt):
