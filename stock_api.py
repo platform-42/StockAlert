@@ -38,6 +38,9 @@ from lib.core.tokens import (
     StockAPICFG,
     AppCFG
     )
+from lib.core.ops import (
+    Component
+)
 from lib.mongo.persistence_factory import (
     init_db,
     init_indexes_devices
