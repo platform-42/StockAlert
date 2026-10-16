@@ -38,6 +38,9 @@ from lib.core.tokens import (
     StockAPICFG,
     AppCFG
     )
+from lib.core.args import (
+    Argument
+)
 from lib.core.ops import (
     ComponentType,
     ComponentName,
@@ -261,8 +264,8 @@ def create_app(
 
 def main():
     parser = argparse.ArgumentParser(description="StockAPI webservice")
-    parser.add_argument("--mongodb", required=True, help="Path to mongodb.yml")
-    parser.add_argument("--stock_api", required=True, help="Path to stock_api.yml")
+    parser.add_argument(Argument.MONGODB.key, required=True, help="Path to mongodb.yml")
+    parser.add_argument(Argument.STOCK_API.key, required=True, help="Path to stock_api.yml")
     args = parser.parse_args()
 
     #

@@ -18,6 +18,9 @@ import time
 from datetime import datetime
 
 from ops_stats import OpsClient
+from lib.core.args import (
+    Argument
+)
 from lib.core.tokens import (
     JsonTKN,
     StocksCFG,
@@ -74,9 +77,9 @@ sys.excepthook = handle_uncaught_exception
 
 def main():
     parser = argparse.ArgumentParser(description="StockAlert Monitor")
-    parser.add_argument("--mongodb", required=True, help="Path to mongodb.yml")
-    parser.add_argument("--stocks", required=True, help="Path to stocks.yml")
-    parser.add_argument("--apns", required=True, help="Path to apns.yml")
+    parser.add_argument(Argument.MONGODB.key, required=True, help="Path to mongodb.yml")
+    parser.add_argument(Argument.STOCKS.key, required=True, help="Path to stocks.yml")
+    parser.add_argument(Argument.APNS.key, required=True, help="Path to apns.yml")
     args = parser.parse_args()
 
     #
