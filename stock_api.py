@@ -39,7 +39,8 @@ from lib.core.tokens import (
     AppCFG
     )
 from lib.core.ops import (
-    Component,
+    ComponentType,
+    ComponentName,
     Customer
 )
 from lib.mongo.persistence_factory import (
@@ -103,7 +104,7 @@ def create_app(
         client.update_state(
             Customer.PLATFORM42.key, 
             Component.FLASK.key, 
-            Component.STOCKAPI.key, 
+            ComponentName.STOCKAPI.key, 
             True
             )
         return None
