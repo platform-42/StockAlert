@@ -196,6 +196,7 @@ def main():
                     quote_doc[JsonTKN.CURRENT_QUOTE.key]
                 )
             )
+        a = 6 / 0
         stop_elapsed = time.perf_counter()
         client.update_stats(
             Customer.PLATFORM42.key,
