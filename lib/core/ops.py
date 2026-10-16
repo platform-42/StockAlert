@@ -6,6 +6,7 @@ class ComponentType(StrEnum):
 
 class ComponentName(StrEnum):
     STOCKAPI = "StockAPI"
+    STOCKALERT = "StockAlert"
 
 class Customer(StrEnum):
     PLATFORM42 = "Platform42"

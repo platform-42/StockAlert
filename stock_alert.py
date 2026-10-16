@@ -23,6 +23,11 @@ from lib.core.tokens import (
     StocksCFG,
     MongoCFG,
 )
+from lib.core.ops import (
+    ComponentType,
+    ComponentName,
+    Customer
+)
 from lib.core.utils import load_yaml
 from lib.validation.validation import validate_stock
 from lib.alerts.market import (
@@ -57,9 +62,9 @@ def handle_uncaught_exception(exc_type, exc_value, exc_traceback):
         sys.__excepthook__(exc_type, exc_value, exc_traceback)
         return
     client.update_state(
-        "Platform42", 
-        "CHANNEL", 
-        "StockAlert", 
+        Customer.PLATFORM42.key,
+        ComponentType.CHANNEL.key,
+        ComponentName.STOCKALERT.key,
         False
         )
     client.close()
@@ -85,9 +90,9 @@ def main():
     #   confirm stock alert is up in dashboard
     #
     client.update_state(
-        "Platform42", 
-        "CHANNEL", 
-        "StockAlert", 
+        Customer.PLATFORM42.key,
+        ComponentType.CHANNEL.key,
+        ComponentName.STOCKALERT.key,
         True
         )
 
@@ -193,9 +198,9 @@ def main():
             )
         stop_elapsed = time.perf_counter()
         client.update_stats(
-            "Platform42",
-            "CHANNEL",
-            "StockAlert",
+            Customer.PLATFORM42.key,
+            ComponentType.CHANNEL.key,
+            ComponentName.STOCKALERT.key,
             1,
             0,
             (stop_elapsed - start_elapsed) * 1000
