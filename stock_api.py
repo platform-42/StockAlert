@@ -39,7 +39,8 @@ from lib.core.tokens import (
     AppCFG
     )
 from lib.core.ops import (
-    Component
+    Component,
+    Customer
 )
 from lib.mongo.persistence_factory import (
     init_db,
@@ -100,9 +101,9 @@ def create_app(
         #   The first valid request will set the service state to "running" in the OpsStats dashboard
         #
         client.update_state(
-            "Platform42", 
-            "FLASK", 
-            "StockAPI", 
+            Customer.PLATFORM42.key, 
+            Component.FLASK.key, 
+            Component.STOCKAPI.key, 
             True
             )
         return None
