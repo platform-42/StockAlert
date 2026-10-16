@@ -102,9 +102,9 @@ def create_app(
         #   The first valid request will set the service state to "running" in the OpsStats dashboard
         #
         client.update_state(
-            Customer.PLATFORM42.key, 
-            Component.FLASK.key, 
-            ComponentName.STOCKAPI.key, 
+            Customer.PLATFORM42.key,
+            ComponentType.FLASK.key,
+            ComponentName.STOCKAPI.key,
             True
             )
         return None
@@ -177,9 +177,9 @@ def create_app(
         if not sector:
             stop_elapsed = time.perf_counter()
             client.update_stats(
-                "Platform42", 
-                "FLASK", 
-                "StockAPI", 
+                Customer.PLATFORM42.key,
+                ComponentType.FLASK.key,
+                ComponentName.STOCKAPI.key,
                 1,
                 1,
                 (stop_elapsed - start_elapsed) * 1000
@@ -197,9 +197,9 @@ def create_app(
             quotes_list.append(quotes_doc)
         stop_elapsed = time.perf_counter()
         client.update_stats(
-            "Platform42", 
-            "FLASK", 
-            "StockAPI", 
+            Customer.PLATFORM42.key,
+            ComponentType.FLASK.key,
+            ComponentName.STOCKAPI.key,
             1,
             0,
             (stop_elapsed - start_elapsed) * 1000
@@ -222,9 +222,9 @@ def create_app(
         if not sector:
             stop_elapsed = time.perf_counter()
             client.update_stats(
-                "Platform42", 
-                "FLASK", 
-                "StockAPI", 
+                Customer.PLATFORM42.key,
+                ComponentType.FLASK.key,
+                ComponentName.STOCKAPI.key,
                 1,
                 1,
                 (stop_elapsed - start_elapsed) * 1000
@@ -243,9 +243,9 @@ def create_app(
             alerts_list.append(alerts_doc)
         stop_elapsed = time.perf_counter()
         client.update_stats(
-            "Platform42", 
-            "FLASK", 
-            "StockAPI", 
+            Customer.PLATFORM42.key,
+            ComponentType.FLASK.key,
+            ComponentName.STOCKAPI.key,
             1,
             0,
             (stop_elapsed - start_elapsed) * 1000
@@ -269,9 +269,9 @@ def main():
     #   Declare Flask app down before starting the webservice, so that OpsStats can report on the service state
     #
     client.update_state(
-        "Platform42", 
-        "FLASK", 
-        "StockAPI", 
+        Customer.PLATFORM42.key,
+        ComponentType.FLASK.key,
+        ComponentName.STOCKAPI.key,
         False
         )
 
